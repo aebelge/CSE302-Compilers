@@ -1,0 +1,16 @@
+var x = 15 : int;
+
+def fact(n : int) : int {
+  return fact_(1, n);
+}
+
+def fact_(acc : int, n : int) : int {
+  if (n <= 0) {
+    return acc;
+  }
+  return fact_(acc * n, n - 1);
+}
+
+def main() {
+  print(fact(x));
+}
